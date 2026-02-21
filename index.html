@@ -3,68 +3,117 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
+        <meta name="description" content="Technical Consultant · Scrum Master · DevOps. Portfolio of Marios Marneros — projects, experience, and contact." />
         <meta name="author" content="" />
         <title>Marios Marneros</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Font Awesome icons (free version) -->
+        <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Marios Marneros</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://drive.google.com/file/d/1TvO_kYiaEodOOK1CPTYymRqq4oxVA-EB/view?usp=sharing" target="_blank">Resume</a></li> -->
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                </ul>
+        <a class="skip-link" href="#about">Skip to main content</a>
+
+        <!-- Top header (minimal) -->
+        <header class="top-header" role="banner">
+            <div class="header-inner">
+                <a class="brand" href="#page-top">Marios Marneros</a>
+                <nav class="top-nav" aria-label="Primary navigation">
+                    <a href="#about">About</a>
+                    <a href="#projects">Work</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <a class="social-icon" href="https://github.com/marnerosm" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)"><i class="fab fa-github"></i></a>
+                    <a class="social-icon" href="https://www.linkedin.com/in/mmarneros/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
-        </nav>
+        </header>
+
+        <!-- Hero (full viewport) -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-ether">
+                <svg class="ether-blob" viewBox="0 0 150 170" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <filter id="blur">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+                        </filter>
+                        <linearGradient id="blobGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#9ad1ff;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#4a90e2;stop-opacity:0.8" />
+                            <stop offset="100%" style="stop-color:#2d5aa3;stop-opacity:0.6" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M 100,20 Q 150,40 160,100 Q 150,160 100,180 Q 50,160 40,100 Q 50,40 100,20 Z" filter="url(#blur)"></path>
+                </svg>
+            </div>
+            <div class="hero-inner">
+                <img class="hero-photo" src="assets/img/profile.jpg" alt="Portrait of Marios Marneros" />
+                <div class="hero-text">
+                <h1 id="hero-title">Marios Marneros</h1>
+                <p class="hero-sub">Technical Consultant · Scrum Master · DevOps</p>
+                <!-- <p class="hero-cta"><a class="btn-primary" href="#projects">Selected work</a></p> -->
+                </div>
+            </div>
+        </section>
+        <!-- Left sidebar removed (replaced by top header + hero) -->
+
+        <!-- Featured work (compact grid) -->
+        <section class="featured" aria-labelledby="featured-title">
+            <div class="featured-inner">
+                <h2 id="featured-title" class="mb-4">Selected Work</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>ASF — Gym Management App</h3>
+                        <p>Co-created and developed an Android app for gym class booking and management (sold to a gym owner).</p>
+                        <p><a href="https://play.google.com/store/apps/details?id=ltd.solution.software.myt.asfapp&gl=GB" target="_blank" rel="noopener noreferrer">View on Play Store</a></p>
+                    </article>
+                    <article class="project-card">
+                        <h3>E-Grocers (BSc Thesis)</h3>
+                        <p>Android grocery shopping app integrating Google Pay and user-friendly shopping flows.</p>
+                        <p><a href="#projects">More details</a></p>
+                    </article>
+                    <article class="project-card">
+                        <h3>Dungeon Knight</h3>
+                        <p>Team-based Unity game developed using Agile practices; I was Scrum Master.</p>
+                        <p><a href="#projects">More details</a></p>
+                    </article>
+                    <article class="project-card">
+                        <h3>PetLink</h3>
+                        <p>Android marketplace connecting pet owners with pet-sitters; implemented using Firebase.</p>
+                        <p><a href="#projects">More details</a></p>
+                    </article>
+                    <article class="project-card">
+                        <h3>OCR Using Neural Networks</h3>
+                        <p>Computer vision system using CNN and K-NN to recognise printed and handwritten text.</p>
+                        <p><a href="#projects">More details</a></p>
+                    </article>
+                    <article class="project-card">
+                        <h3>CyberBuddy</h3>
+                        <p>User-awareness mobile prototype focused on educating users about cyber threats.</p>
+                        <p><a href="#projects">More details</a></p>
+                    </article>
+                </div>
+            </div>
+        </section>
         <!-- Page Content-->
         <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Marios
-                        <span class="text-primary">Marneros</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                     Technical Consultant · Scrum Master · DevOps
-                        <a href="mailto:marios.marneros.7cc@gmail.com">marios.marneros.7cc@gmail.com</a>
-                       
-                    </div>
-                    <p class="lead mb-5"> </p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/mmarneros/"target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/marnerosm"target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
+            <!-- Left sidebar removed. Main content follows -->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
-
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Technical Consultant</h3>
                             <div class="subheading mb-3">Automation Consultants Ltd</div>
+                            <p>Working on automation, DevOps and consultancy projects across cloud and on-prem systems.</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">September 2021 - Present</span></div>
                     </div>
@@ -222,7 +271,7 @@
                             <div class="subheading mb-3">Proffessional</div>
                             <p>Co-created and developed a gym class booking and management application which was sold successfully to a gym owner to create classes for members.</p>
                             <p>Technologies used: Java - Android - Firebase - Google APIs</p>
-                            <a href="https://play.google.com/store/apps/details?id=ltd.solution.software.myt.asfapp&gl=GB"target="_blank">Google Play Store: ASF Application</a>
+                            <a href="https://play.google.com/store/apps/details?id=ltd.solution.software.myt.asfapp&gl=GB" target="_blank" rel="noopener noreferrer" aria-label="ASF app on Google Play (opens in new tab)">Google Play Store: ASF Application</a>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">2018 - 2020</span></div> 
                         </div>
